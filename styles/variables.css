@@ -9,6 +9,8 @@
   --indent-frame-horizontal: 10px;
   --indent-frame-vertical: 10px;
 
+  --indent-floating-item: 40px;
+
   --gap-inside-nav: 10px;
   --padding-inside-section: 40px;
   --gap-between-sections: 50px;
@@ -38,8 +40,6 @@
   --font-family: 'IBM Plex mono';
   --font-main-size: 18px;
   --font-title-size: clamp(7.25rem, 7.011rem + 1.018vw, 7.5rem);
-  /* --font-mobile-title-size: clamp(7.25rem, 7.011rem + 1.018vw, 7.5rem); */
-  /* --font-desktop-title-size: clamp(7.5rem, 0.563rem + 14.453vw, 9.813rem); */
 
 
   /* ОФОРМЛЕНИЕ */
@@ -47,19 +47,60 @@
 
   
   /* РАЗРЕШЕНИЕ */
-  --resolution-min: 375px;
-  --resolution-middle: 768px;
-  --resolution-max: 1024px;
+  --resolution: 375px;
 
-  
+
+}
+
+
+@media (width >= 768px) {
+  :root {
+    /* ОТСТУПЫ (mobile-first)*/
+    --indent-frame-horizontal: 20px;
+    --indent-frame-vertical: 20px;
+
+    --indent-floating-item: 50px;
+
+    --gap-inside-nav: 10px;
+    --padding-inside-section: 60px;
+    --gap-between-sections: 80px;
+
+    --gap-inside-card: 10px;
+    --gap-inside-section: 20px;
+    --gap-between-cards: 20px;
+
+    --gap-gallery: 20px;
+
+
+    /* ЦВЕТА */
+    --accent-color: rgba(255, 0, 112, 1);
+    --shadow-color: rgba(219, 0, 255, 1);
+    
+    --color-dark-main: rgba(0, 0, 40, 1);
+    --color-light-main: rgba(241, 178, 206, 1);
+
+
+    /* ШРИФТЫ */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    --font-line-height-min: 18px;
+    --font-line-height-normal: 23.4px;
+
+    --font-family: 'IBM Plex mono';
+    --font-main-size: 18px;
+    --font-title-size: 120px;
+
+
+    /* ОФОРМЛЕНИЕ */
+    --background-image-path: url(var(--background-image-path));
+
+    
+    /* РАЗРЕШЕНИЕ */
+    --resolution: 768px;
+
+  }
 }
 
 
 
-
-/* :root {
-@media (width >= 768px) {
-  :root {
-    --font-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
-} */
