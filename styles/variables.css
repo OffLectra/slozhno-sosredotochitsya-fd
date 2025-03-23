@@ -104,3 +104,26 @@
 
 
 
+
+@media (width >= 1024px) {
+  :root {
+
+    /* ШРИФТЫ */
+    --font-title-size: 157px;
+
+
+    /* ОФОРМЛЕНИЕ */
+    --background-image-path: url(var(--background-image-path));
+    --gap-inside-section: 20px;
+    --gap-gallery: 20px;
+    
+
+    /* РАЗРЕШЕНИЕ */
+    --resolution: 1024px;
+
+
+  }
+}
+
+
+
