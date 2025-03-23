@@ -28,7 +28,7 @@
 }
 
 .floating-item::after {
-  content: '';
+  content: "";
   position: absolute;
   inline-size: 9px;
   block-size: 9px;
@@ -55,8 +55,6 @@
 .bold-text {
   font-weight: var(--font-weight-bold);
 }
-
-
 
 /* HEADER */
 
@@ -86,13 +84,27 @@
   font-size: var(--font-main-size);
   font-weight: var(--font-weight-regular);
 }
-/* 
-.header__theme-menu-item
-.header__theme-menu-button
-.header__theme-menu-button_type_light
-.header__theme-menu-button_active
-.header__theme-menu-button_type_auto 
-*/
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--color-outline);
+  pointer-events: none;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--color-outline);
+  opacity: 0.9;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+  border: 1px solid var(--color-outline);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+.header__theme-menu-button:focus-visible {
+  outline: 1px solid var(--color-outline);
+}
 .header {
   position: relative;
   min-height: 668px;
@@ -118,7 +130,7 @@
 
 .header::before,
 .footer-container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: var(--indent-frame-vertical);
   right: var(--indent-frame-horizontal);
@@ -131,7 +143,7 @@
 
 .header::after,
 .footer-container::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: var(--indent-frame-vertical);
   left: var(--indent-frame-horizontal);
@@ -152,7 +164,6 @@
 .header__theme-subtitle {
   line-height: var(--font-line-height-normal);
 }
-
 
 /* MAIN */
 .main {
@@ -181,8 +192,11 @@
   gap: var(--gap-between-cards);
 }
 
+.main__section__card-text {
+  color: var(--color-light-main);
+}
 .section-gallery .main__section__cards-container {
-  gap: var(--gap-gallery)
+  gap: var(--gap-gallery);
 }
 
 .main__section-card {
@@ -221,13 +235,11 @@
 
 .block-2 {
   height: 355px;
-
 }
 
 .block-3 {
   height: 237px;
 }
-
 
 /* FOOTER */
 .footer {
@@ -247,13 +259,9 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-
-
-
 @media (width >= 768px) {
-
   /* HEADER */
-    
+
   .header {
     min-height: 1024px;
   }
@@ -271,13 +279,10 @@
     justify-self: right;
   }
 
-
   /* MAIN */
   .main {
     min-height: 3682px;
   }
-
-
 
   .section-why {
     grid-template-columns: 1fr 2fr;
@@ -294,13 +299,11 @@
   .section-what .main__section__cards-container {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
-    
   }
 
   .section-how {
     grid-template-columns: 1fr 2fr;
   }
-
 
   .block-1 {
     height: auto;
@@ -320,7 +323,6 @@
     grid-template-rows: 192px 230px 318px;
     gap: var(--gap-gallery);
   }
-  
 
   .gallery-item {
     overflow: hidden;
@@ -329,7 +331,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
   }
 
   .gallery-item:nth-child(1) {
@@ -353,21 +354,17 @@
     grid-row: 2 / 3;
   }
 
-
   .main__section-img {
     height: 100%;
-    
   }
 
   /* FOOTER */
   .footer {
     min-height: 1024px;
   }
-
 }
 
 @media (width >= 1024px) {
-
   /* HEADER */
   .header {
     min-height: 768px;
@@ -377,26 +374,16 @@
     justify-self: center;
     align-self: baseline;
     /* height: 240px; */
-    
   }
-  
+
   .header__theme-menu-list {
     flex-direction: row;
   }
 
-  /* 
-  .header__theme-menu-item
-  .header__theme-menu-button
-  .header__theme-menu-button_type_light
-  .header__theme-menu-button_active
-  .header__theme-menu-button_type_auto 
-  */
   .header-container {
     grid-template-rows: 300px auto 300px;
     gap: 0px;
   }
-
-
 
   .header__theme-title {
     margin-left: -20px;
@@ -407,21 +394,17 @@
     justify-self: right;
   }
 
-
   /* MAIN */
   .main {
     min-height: 3352px;
   }
 
-
   .section-why {
     grid-template-columns: 1fr 2fr;
-
   }
 
   .section-what {
     grid-template-columns: 1fr 1fr 1fr;
-
   }
 
   .section-what .main__section__cards-container {
@@ -436,15 +419,9 @@
     align-content: baseline;
   }
 
-
   .section-how {
     grid-template-columns: 1fr 2fr;
   }
-
-
-
-
-
 
   .block-1 {
     height: auto;
@@ -464,18 +441,12 @@
     gap: var(--gap-gallery);
   }
 
-
-
   .main__section-img {
     height: 100%;
-    
   }
-
-  
 
   /* FOOTER */
   .footer {
     min-height: 768px;
   }
-
 }

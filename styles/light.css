@@ -10,9 +10,36 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --background-image-path: url(../images/cover-image-light.png);
-  
+
+  /* ЦВЕТА */
+  --accent-color: rgba(255, 141, 203, 1);
+  --shadow-color: rgba(255, 194, 230, 1);
+
+  --color-dark-main: rgba(53, 52, 48, 1);
+  --color-light-main: rgba(255, 241, 247, 1);
+
+  --color-outline: var(--color-dark-main);
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+.theme-light .floating-item {
+  display: none;
+}
+
+.theme-light .main {
+  background-color: var(--color-light-main);
+}
+
+.theme-light .footer {
+  background-color: var(--color-light-main);
+}
+
+.theme-light .main__section__card-text {
+  color: var(--color-dark-main);
+}
+
+.theme-light .header__theme-menu-button {
+  color: var(--color-dark-main);
+}
+.theme-light .main__section-title {
+  color: var(--color-dark-main);
 }

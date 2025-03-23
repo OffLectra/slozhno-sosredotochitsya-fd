@@ -3,7 +3,6 @@
   и их переопределение под различные устройства
 */
 
-
 :root {
   /* ОТСТУПЫ (mobile-first)*/
   --indent-frame-horizontal: 10px;
@@ -21,14 +20,14 @@
 
   --gap-gallery: 10px;
 
-
   /* ЦВЕТА */
   --accent-color: rgba(255, 0, 112, 1);
   --shadow-color: rgba(219, 0, 255, 1);
-  
+
   --color-dark-main: rgba(0, 0, 40, 1);
   --color-light-main: rgba(241, 178, 206, 1);
 
+  --color-outline: var(--accent-color);
 
   /* ШРИФТЫ */
   --font-weight-regular: 400;
@@ -37,21 +36,16 @@
   --font-line-height-min: 18px;
   --font-line-height-normal: 23.4px;
 
-  --font-family: 'IBM Plex mono';
+  --font-family: "IBM Plex mono";
   --font-main-size: 18px;
   --font-title-size: clamp(7.25rem, 7.011rem + 1.018vw, 7.5rem);
 
-
   /* ОФОРМЛЕНИЕ */
-  --background-image-path: url(../images/cover-image.png);
+  --background-image-path: url(../images/cover-image-dark.png);
 
-  
   /* РАЗРЕШЕНИЕ */
   --resolution: 375px;
-
-
 }
-
 
 @media (width >= 768px) {
   :root {
@@ -71,14 +65,12 @@
 
     --gap-gallery: 20px;
 
-
     /* ЦВЕТА */
     --accent-color: rgba(255, 0, 112, 1);
     --shadow-color: rgba(219, 0, 255, 1);
-    
+
     --color-dark-main: rgba(0, 0, 40, 1);
     --color-light-main: rgba(241, 178, 206, 1);
-
 
     /* ШРИФТЫ */
     --font-weight-regular: 400;
@@ -87,43 +79,29 @@
     --font-line-height-min: 18px;
     --font-line-height-normal: 23.4px;
 
-    --font-family: 'IBM Plex mono';
+    --font-family: "IBM Plex mono";
     --font-main-size: 18px;
     --font-title-size: 120px;
-
 
     /* ОФОРМЛЕНИЕ */
     --background-image-path: url(var(--background-image-path));
 
-    
     /* РАЗРЕШЕНИЕ */
     --resolution: 768px;
-
   }
 }
 
-
-
-
 @media (width >= 1024px) {
   :root {
-
     /* ШРИФТЫ */
     --font-title-size: 157px;
-
 
     /* ОФОРМЛЕНИЕ */
     --background-image-path: url(var(--background-image-path));
     --gap-inside-section: 20px;
     --gap-gallery: 20px;
-    
 
     /* РАЗРЕШЕНИЕ */
     --resolution: 1024px;
-
-
   }
 }
-
-
-
