@@ -24,7 +24,8 @@
   --frame-color: rgb(255, 0, 112);
   --frame-color-hover: rgba(255, 0, 112, 0.4);
   --color-menu-items: var(--accent-color);
-  --color-bg: rgb(0, 0, 40);
+
+  --color-bg: #000028;
 
   /* ОФОРМЛЕНИЕ */
   --background-image-path: url(../images/cover-image-dark.png);

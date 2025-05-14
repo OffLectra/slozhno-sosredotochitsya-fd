@@ -15,13 +15,14 @@
   --color-dark-main: rgb(53, 52, 48);
   --color-light-main: rgb(255, 241, 247);
   --color-outline: rgb(53, 52, 48);
-  --color-bg: rgb(255, 241, 247);
   --color-main-section-title: rgb(53, 52, 48);
   --color-main-font: rgb(53, 52, 48);
   --color-title-decore: rgb(53, 52, 48);
   --frame-color: rgb(53, 52, 48);
   --frame-color-hover: rgba(50, 49, 45, 0.4);
   --color-menu-items: rgb(53, 52, 48);
+
+  --color-bg: #fff1f7;
 }
 
 .theme-light .floating-item {
@@ -39,12 +40,13 @@
     --color-dark-main: rgba(53, 52, 48, 1);
     --color-light-main: rgb(255, 241, 247);
     --color-outline: var(--color-dark-main);
-    --color-bg: rgb(255, 241, 247);
     --color-main-section-title: rgb(53, 52, 48);
     --color-main-font: rgb(53, 52, 48);
     --frame-color: rgb(53, 52, 48);
     --frame-color-hover: rgba(50, 49, 45, 0.4);
     --color-menu-items: rgb(53, 52, 48);
+
+    --color-bg: #fff1f7;
   }
 
   .floating-item {

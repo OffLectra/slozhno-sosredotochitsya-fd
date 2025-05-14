@@ -2,12 +2,12 @@
 
 /* ОБЩИЕ СТИЛИ */
 .page {
+  background-image: var(--background-image-path);
   background-color: var(--color-bg);
 
   position: relative;
   font-family: var(--font-family), monospace;
   font-size: var(--font-main-size);
-  background-image: var(--background-image-path);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
