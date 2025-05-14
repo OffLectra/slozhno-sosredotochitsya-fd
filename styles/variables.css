@@ -1,6 +1,5 @@
 /*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
+  Переменные для проекта и их переопределение под различные устройства
 */
 
 :root {
@@ -21,30 +20,30 @@
   --gap-gallery: 10px;
 
   /* ЦВЕТА */
-  --accent-color: rgba(255, 0, 112, 1);
-  --shadow-color: rgba(219, 0, 255, 1);
-
-  --color-dark-main: rgba(0, 0, 40, 1);
-  --color-light-main: rgba(241, 178, 206, 1);
-
+  --accent-color: rgb(255, 0, 112);
+  --shadow-color: rgb(219, 0, 255);
+  --color-dark-main: rgb(0, 0, 40);
+  --color-light-main: rgb(241, 178, 206);
   --color-outline: var(--accent-color);
+  --color-main-section-title: rgb(255, 0, 112);
+  --color-main-font: rgb(241, 178, 206);
+  --color-title-decore: rgb(0, 0, 40);
+  --frame-color: rgb(255, 0, 112);
+  --frame-color-hover: rgba(255, 0, 112, 0.4);
+  --color-menu-items: var(--accent-color);
+  --color-bg: rgb(0, 0, 40);
 
   /* ШРИФТЫ */
   --font-weight-regular: 400;
   --font-weight-bold: 700;
-
   --font-line-height-min: 18px;
   --font-line-height-normal: 23.4px;
-
   --font-family: "IBM Plex mono";
   --font-main-size: 18px;
   --font-title-size: clamp(7.25rem, 7.011rem + 1.018vw, 7.5rem);
 
   /* ОФОРМЛЕНИЕ */
   --background-image-path: url(../images/cover-image-dark.png);
-
-  /* РАЗРЕШЕНИЕ */
-  --resolution: 375px;
 }
 
 @media (width >= 768px) {
@@ -55,53 +54,11 @@
 
     --indent-floating-item: 50px;
 
-    --gap-inside-nav: 10px;
     --padding-inside-section: 60px;
     --gap-between-sections: 80px;
 
-    --gap-inside-card: 10px;
-    --gap-inside-section: 20px;
-    --gap-between-cards: 20px;
-
     --gap-gallery: 20px;
 
-    /* ЦВЕТА */
-    --accent-color: rgba(255, 0, 112, 1);
-    --shadow-color: rgba(219, 0, 255, 1);
-
-    --color-dark-main: rgba(0, 0, 40, 1);
-    --color-light-main: rgba(241, 178, 206, 1);
-
-    /* ШРИФТЫ */
-    --font-weight-regular: 400;
-    --font-weight-bold: 700;
-
-    --font-line-height-min: 18px;
-    --font-line-height-normal: 23.4px;
-
-    --font-family: "IBM Plex mono";
-    --font-main-size: 18px;
-    --font-title-size: 120px;
-
-    /* ОФОРМЛЕНИЕ */
-    --background-image-path: url(var(--background-image-path));
-
-    /* РАЗРЕШЕНИЕ */
-    --resolution: 768px;
-  }
-}
-
-@media (width >= 1024px) {
-  :root {
-    /* ШРИФТЫ */
-    --font-title-size: 157px;
-
-    /* ОФОРМЛЕНИЕ */
-    --background-image-path: url(var(--background-image-path));
-    --gap-inside-section: 20px;
-    --gap-gallery: 20px;
-
-    /* РАЗРЕШЕНИЕ */
-    --resolution: 1024px;
+    --font-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }

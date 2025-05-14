@@ -5,13 +5,31 @@
 */
 
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
+  /* Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  /* Дублируем переменные для тёмной темы */
+
+  /* ЦВЕТА */
+  --accent-color: rgb(255, 0, 112);
+  --shadow-color: rgb(219, 0, 255);
+
+  --color-dark-main: rgb(0, 0, 40);
+  --color-light-main: rgb(241, 178, 206);
+
+  --color-outline: var(--accent-color);
+  --color-main-section-title: rgb(255, 0, 112);
+  --color-main-font: rgb(241, 178, 206);
+  --color-title-decore: rgb(0, 0, 40);
+  --frame-color: rgb(255, 0, 112);
+  --frame-color-hover: rgba(255, 0, 112, 0.4);
+  --color-menu-items: var(--accent-color);
+  --color-bg: rgb(0, 0, 40);
+
+  /* ОФОРМЛЕНИЕ */
   --background-image-path: url(../images/cover-image-dark.png);
 }
 
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+.theme-dark .floating-item {
+  display: block;
 }

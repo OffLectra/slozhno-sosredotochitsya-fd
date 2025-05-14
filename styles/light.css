@@ -3,43 +3,51 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
+  /* Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
   --background-image-path: url(../images/cover-image-light.png);
 
   /* ЦВЕТА */
-  --accent-color: rgba(255, 141, 203, 1);
-  --shadow-color: rgba(255, 194, 230, 1);
-
-  --color-dark-main: rgba(53, 52, 48, 1);
-  --color-light-main: rgba(255, 241, 247, 1);
-
-  --color-outline: var(--color-dark-main);
+  --accent-color: rgb(255, 141, 203);
+  --shadow-color: rgb(255, 194, 230);
+  --color-dark-main: rgb(53, 52, 48);
+  --color-light-main: rgb(255, 241, 247);
+  --color-outline: rgb(53, 52, 48);
+  --color-bg: rgb(255, 241, 247);
+  --color-main-section-title: rgb(53, 52, 48);
+  --color-main-font: rgb(53, 52, 48);
+  --color-title-decore: rgb(53, 52, 48);
+  --frame-color: rgb(53, 52, 48);
+  --frame-color-hover: rgba(50, 49, 45, 0.4);
+  --color-menu-items: rgb(53, 52, 48);
 }
 
 .theme-light .floating-item {
   display: none;
 }
 
-.theme-light .main {
-  background-color: var(--color-light-main);
-}
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Дублирование переменных светлой темы */
+    --background-image-path: url(../images/cover-image-light.png);
 
-.theme-light .footer {
-  background-color: var(--color-light-main);
-}
+    /* ЦВЕТА */
+    --accent-color: rgb(255, 141, 203);
+    --shadow-color: rgb(255, 194, 230);
+    --color-dark-main: rgba(53, 52, 48, 1);
+    --color-light-main: rgb(255, 241, 247);
+    --color-outline: var(--color-dark-main);
+    --color-bg: rgb(255, 241, 247);
+    --color-main-section-title: rgb(53, 52, 48);
+    --color-main-font: rgb(53, 52, 48);
+    --frame-color: rgb(53, 52, 48);
+    --frame-color-hover: rgba(50, 49, 45, 0.4);
+    --color-menu-items: rgb(53, 52, 48);
+  }
 
-.theme-light .main__section__card-text {
-  color: var(--color-dark-main);
-}
-
-.theme-light .header__theme-menu-button {
-  color: var(--color-dark-main);
-}
-.theme-light .main__section-title {
-  color: var(--color-dark-main);
+  .floating-item {
+    display: none;
+  }
 }

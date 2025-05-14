@@ -1,4 +1,4 @@
-/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
+/* Глобальные стили для проекта */
 
 *,
 *::before,
@@ -39,4 +39,5 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  cursor: pointer;
 }
