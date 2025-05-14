@@ -2,8 +2,10 @@
 
 /* ОБЩИЕ СТИЛИ */
 .page {
+  background-color: var(--color-bg);
+
   position: relative;
-  font-family: var(--font-family), sans-serif;
+  font-family: var(--font-family), monospace;
   font-size: var(--font-main-size);
   background-image: var(--background-image-path);
   background-repeat: no-repeat;
@@ -11,7 +13,6 @@
   background-size: cover;
   background-attachment: fixed;
   margin: 0 auto;
-  background-color: var(--color-bg);
   box-sizing: border-box;
 }
 
@@ -124,27 +125,24 @@
   justify-content: center;
 }
 
-.header::before,
-.footer-container::before,
-.header::after,
-.footer-container::after {
+.corner-frame::before {
   content: "";
   position: absolute;
   width: 25px;
   height: 25px;
   border: 1px solid var(--frame-color);
-}
-
-.header::before,
-.footer-container::before {
   bottom: var(--indent-frame-vertical);
   left: var(--indent-frame-horizontal);
   border-top: none;
   border-right: none;
 }
 
-.header::after,
-.footer-container::after {
+.corner-frame::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--frame-color);
   top: var(--indent-frame-vertical);
   right: var(--indent-frame-horizontal);
   border-bottom: none;
